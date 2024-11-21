@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Alura Geek</title>
+        <link rel="shortcut icon" href="./assets/logo-geek-black.png"
+            type="image/x-icon">
+    </head>
+    <header>AluraGeek
+        <img class="header__logo" src="./assets/logo-geek-white.png" alt="logo">
+    </header>
+    <body>
+        <div id="myModal" class="modal">
+        </div>
+        <main>
+            <h2 class="product__message">No se han agregado productos.</h2>
+            <section class="product" data-list>
+                <div class="product__title">
+                    <h3>MIS PRODUCTOS</h3>
+                </div>
+            </section>
+            <section class="add__product">
+                <h2 class="add__product__titulo">Agregar Producto</h2>
+                <form id="add-product-form" data-form>
+                    <div>
+                        <input class="form__input" type="text" id="product-name"
+                            name="product-name"
+                            placeholder="Nombre del producto" required
+                            data-name>
+                    </div>
+                    <div>
+                        <input class="form__input" type="number"
+                            id="product-price" name="product-price"
+                            placeholder="Precio del producto" required
+                            data-price min="0">
+                    </div>
+                    <div class="image__container">
+                        <input class="" type="file" id="product-image"
+                            name="product-image" accept="image/*"
+                            data-image hidden>
+                        <label for="product-image" id="product-image-label" class="image__label">
+                            Carga una imagen del producto</label>
+                    </div>
+                    <div class="button__container">
+                        <button id="button-save" class="button__btn--save"
+                            type="submit">Guardar</button>
+                        <button id="button-clear"  class="button__btn--clear"
+                            type="reset">Limpiar</button>
+                    </div>
+                </form>
+
+            </main>
+            <script src="./js/showProductCard.js" type="module"></script>
+            <script src="./js/addProductCard.js" type="module"></script>
+        </body>
+        <footer class="footer">
+            <h2 class="footer__text">AluraGeek</h2>
+            <h3 class="footer__author">Desarollado por JISSBOSS</h3>
+        </footer>
+    </html>
